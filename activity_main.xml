@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent"
+ android:orientation="vertical" android:background="#FFFDF7" android:padding="18dp">
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+  android:text="HANA" android:textSize="30sp" android:textStyle="bold" android:textColor="#12243A"/>
+ <TextView android:id="@+id/level" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  android:text="Level 1 • Daily Korean" android:textColor="#1F8A70" android:textSize="15sp"/>
+ <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+   <TextView android:id="@+id/korean" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="안녕하세요! 오늘 기분이 어때요?" android:textSize="25sp" android:textStyle="bold" android:textColor="#12243A" android:paddingTop="24dp"/>
+   <Button android:id="@+id/speaker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔊 Replay Korean"/>
+   <TextView android:id="@+id/pronunciation" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="an-nyeong-ha-se-yo! o-neul gi-bun-i eo-ttae-yo?" android:textSize="16sp" android:paddingTop="8dp"/>
+   <TextView android:id="@+id/english" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="English: Hello! How do you feel today?" android:textSize="16sp" android:paddingTop="8dp"/>
+   <TextView android:id="@+id/tamil" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Tamil: வணக்கம்! இன்று எப்படி உணர்கிறீர்கள்?" android:textSize="16sp" android:paddingTop="8dp"/>
+   <TextView android:id="@+id/vocab" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="Vocabulary\n안녕하세요 (an-nyeong-ha-se-yo) — hello — வணக்கம்\n오늘 (o-neul) — today — இன்று\n기분 (gi-bun) — feeling/mood — மனநிலை\n어때요? (eo-ttae-yo?) — how is it? — எப்படி இருக்கிறது?"
+    android:textSize="16sp" android:paddingTop="18dp"/>
+   <TextView android:id="@+id/correction" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="" android:textSize="16sp" android:textColor="#9C3B2E" android:paddingTop="16dp"/>
+  </LinearLayout>
+ </ScrollView>
+ <TextView android:id="@+id/transcript" android:layout_width="match_parent" android:layout_height="wrap_content"
+  android:text="Tap Record and speak Korean." android:padding="10dp" android:textSize="16sp"/>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+  <Button android:id="@+id/record" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="🎙 Record"/>
+  <Button android:id="@+id/send" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Send" android:enabled="false"/>
+ </LinearLayout>
+ <Button android:id="@+id/next" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Next practice"/>
+</LinearLayout>
